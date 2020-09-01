@@ -24,6 +24,14 @@ func TestTrendIndicator(t *testing.T) {
 				series:         []float64{5, 4, 3, 2},
 				expectedResult: "-1",
 			},
+			{
+				series:         []float64{2.3, 2.2, 2.1, 2},
+				expectedResult: "-0.1",
+			},
+			{
+				series:         []float64{2.5, 2.2, 2.1, 2},
+				expectedResult: "-0.16",
+			},
 		}
 
 		for _, test := range tests {
